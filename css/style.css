@@ -1,0 +1,100 @@
+/* colors */
+.col1{
+    color:#3c3d42;
+}
+.bg-col-1{
+    background-color:#3c3d42;
+}
+.col2{
+    color: #9ccd62;
+}
+.bg-col-2{
+    background-color: #9ccd62;
+}
+.col3{
+    color: #f6f8e2;
+}
+.bg-col-3{
+    background-color: #f6f8e2;
+}
+.col4{
+    color: #e0ddca;
+}
+.bg-col-4{
+    background-color: #e0ddca;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to left, #3c3d42, #9ccd62);
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.to-dos li{
+    list-style: none;
+    color: #9ccd62;
+    font-size: 20px;
+    padding: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+.to-dos li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(../R.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: -29px;
+}
+
+.to-dos li.cheked{
+    text-decoration: line-through;
+}
+.to-dos li.cheked::before{
+    background-image: url(../R11.png);
+}
+.body-to-do{
+    border-radius: 20px;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #e0ddca;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color:#949693 ;
+    border-radius: 50%;
+}
+@media (min-width:773px) {
+    .all{
+    width: 100%;
+    margin: auto;
+        transform: translateX(15%);
+    }    
+}
+.menu {
+    list-style:none ;
+    color: #f6f8e2;
+    font-size: 20px;
+
+}
+.menu li{
+  margin: 5px 0px;
+  padding: 5px !important;
+}

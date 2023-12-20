@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>to do app</title>
+</head>
+<body>
+    <section class="home vh-100 d-flex align-items-center justify-content-center "> 
+        <div class="container">
+            <div class="row all  m-auto">
+                <div class="col-md-8">
+                    <div class="head mb-3">
+                        <h2 class="fw-bold">Hi.. Welcome back</h2>
+                    </div>
+                    <div class="body-to-do bg-col-1 p-4">
+                        <div class="add-to-do mb-3 d-flex">
+                            <input type="text" class="form-control border-0 bg-col-4" id="inputTask" placeholder="add new task ..">
+                            <button class="btn btn-outline-success ms-2 addBtn" onclick="addTask()">Add</button>
+                        </div>
+                        <div class=" d-flex position-relative pb-4">
+                            <ul class="to-dos w-75" id="toDos">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
